@@ -20,9 +20,7 @@ with(instance_place(x,y,oBall))
 		other.y = other.y+lengthdir_y(pdist/12,dir1);
 			
 		show_debug_message("current= "+string(x)+","+string(y));
-		show_debug_message("other= "+string(other.x)+","+string(other.y));
-		
-		
+		show_debug_message("other= "+string(other.x)+","+string(other.y));		
 	}
 }
 #endregion
@@ -71,7 +69,7 @@ if (global.isYourTurn == true)
 						if (PULL_DIST >= 6)
 						{
 							draw_arrow(x-1,y-1,x+lengthdir_x(PULL_DIST,SHOT_ANGLE),y+lengthdir_y(PULL_DIST,SHOT_ANGLE),12);
-							draw_sprite(sBlueDot,0,mouse_x,mouse_y);
+							draw_sprite_ext(sBallCue,0,x-lengthdir_x(PULL_DIST/5,SHOT_ANGLE),y-lengthdir_y(PULL_DIST/5,SHOT_ANGLE),1,1,SHOT_ANGLE,c_white,1);
 						}
 					}
 				}

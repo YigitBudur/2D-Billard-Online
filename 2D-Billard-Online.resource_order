@@ -17,6 +17,8 @@
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"sBallCue","order":7,"path":"sprites/sBallCue/sBallCue.yy",},
+    {"name":"sBallsSmall","order":3,"path":"sprites/sBallsSmall/sBallsSmall.yy",},
     {"name":"sBlueDot","order":5,"path":"sprites/sBlueDot/sBlueDot.yy",},
     {"name":"sPattern1","order":2,"path":"sprites/sPattern1/sPattern1.yy",},
     {"name":"oWalls","order":3,"path":"objects/oWalls/oWalls.yy",},

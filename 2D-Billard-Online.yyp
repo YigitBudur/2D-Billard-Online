@@ -35,6 +35,8 @@
     "IDEVersion": "2023.6.0.92",
   },
   "resources": [
+    {"id":{"name":"sBallCue","path":"sprites/sBallCue/sBallCue.yy",},},
+    {"id":{"name":"sBallsSmall","path":"sprites/sBallsSmall/sBallsSmall.yy",},},
     {"id":{"name":"sBlueDot","path":"sprites/sBlueDot/sBlueDot.yy",},},
     {"id":{"name":"sPattern1","path":"sprites/sPattern1/sPattern1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
@@ -49,7 +51,6 @@
     {"id":{"name":"sWalls","path":"sprites/sWalls/sWalls.yy",},},
     {"id":{"name":"oBall","path":"objects/oBall/oBall.yy",},},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
-    {"id":{"name":"sBallsSmall","path":"sprites/sBallsSmall/sBallsSmall.yy",},},
     {"id":{"name":"fntDefault","path":"fonts/fntDefault/fntDefault.yy",},},
     {"id":{"name":"sBallCatcher","path":"sprites/sBallCatcher/sBallCatcher.yy",},},
     {"id":{"name":"SMS_GUI_Display_NO_BG","path":"sprites/SMS_GUI_Display_NO_BG/SMS_GUI_Display_NO_BG.yy",},},
