@@ -6,7 +6,7 @@ with(instance_place(x,y,oBall))
 {
 	if (id != other.id)
 	{	
-		show_debug_message("collision")
+		show_debug_message("collision");
 		var pdist = point_distance(x,y,other.x,other.y);
 		show_debug_message("pdist="+string(pdist));
 		var dir1 = point_direction(x,y, other.x,other.y); 

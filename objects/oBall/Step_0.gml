@@ -12,7 +12,7 @@ if (placed == true)
 {
 	if (speed > 0)
 	{
-		image_angle += rotationSpeed;
+		image_angle += speed*2;
 	}
 
 } else {
