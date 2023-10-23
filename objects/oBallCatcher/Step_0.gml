@@ -2,11 +2,12 @@
 
 with(instance_place(x,y,oBall)) // with the collided oBall:
 {	
-	if (ballType == 0) // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
+	if (ballType == 0 && placed == true) // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
 	{
 		if (global.isYourTurn == true)
 		{
-			global.isYourTurn = false;		
+			global.isYourTurn = false;
+			instance_destroy();
 		} else {
 			with(instance_create_layer(mouse_x,mouse_y,"layerBalls",oBall))
 			{
@@ -14,6 +15,7 @@ with(instance_place(x,y,oBall)) // with the collided oBall:
 				placed = false;
 			}
 		}
+		
 	}
 	
 	if (ballType == 1) // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
@@ -33,18 +35,21 @@ with(instance_place(x,y,oBall)) // with the collided oBall:
 					global.winner = "OPPONENT";
 				} else { global.winner = "YOU"; }
 			}
+		instance_destroy();
 	}
 	
 	if (ballType == 2) // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
 	{
-		global.redBallsINSIDE++;	
+		global.redBallsINSIDE++;
+		instance_destroy();
 	}
 	
 	if (ballType == 3) // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
 	{
-		global.yellowBallsINSIDE++;	
+		global.yellowBallsINSIDE++;
+		instance_destroy();
 	}
-	instance_destroy();
+	
 }
 
 

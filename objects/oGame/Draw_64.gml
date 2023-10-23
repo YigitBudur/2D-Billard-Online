@@ -1,15 +1,17 @@
 /// @description Insert description here
 draw_set_halign(fa_left);
 draw_set_font(fntDefault);
-draw_text(20,40,"FPS: "+string(floor(fps_real)));
+draw_text(20,40,"FPS: "+string(floor(fps))+" ["+string(floor(fps_real))+"]");
 
-var guiWidth = display_get_gui_width();
-var guiHeight = display_get_gui_height();
 
 draw_set_halign(fa_center);
+var guiWidth = display_get_gui_width();
+var guiHeight = display_get_gui_height();
 draw_text(guiWidth/2,20,"RED BALLS INSIDE: " + string(global.redBallsINSIDE));
 draw_text(guiWidth/2,40,"YELLOW BALLS INSIDE: " + string(global.yellowBallsINSIDE));
 
+
+#region DEBUG the gameState
 draw_set_halign(fa_left);
 if (gameState == 0)
 {
@@ -27,12 +29,17 @@ if (gameState == 3)
 {
 	draw_text(20,20,"ENDED");
 	draw_set_font(fntBig);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
 	draw_text(guiWidth/2,guiHeight/2,global.winner + " HAS WON");
+	draw_set_valign(fa_top);
 }
+#endregion
+
 
 draw_set_font(fntDefault);
 draw_set_halign(fa_center);
 if (global.isYourTurn == true)
 {
-	draw_text(guiWidth/2,240,"[YOUR TURN]");
-} else draw_text(guiWidth/2,240,"[OPPONENTS TURN]");
+	draw_text(guiWidth/2,230,"[YOUR TURN]");
+} else draw_text(guiWidth/2,230,"[OPPONENTS TURN]");

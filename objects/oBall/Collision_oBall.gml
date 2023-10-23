@@ -4,15 +4,14 @@
 var dir1 = point_direction(x,y, other.x,other.y); 
 var dir2 = point_direction(other.x,other.y, x,y);
 	
-direction = dir2;
+//direction = dir2;
 other.direction = dir1;
 //move_bounce_solid(true);
 
 var totalSpeed = (other.speed+speed);
 
-
-other.speed = totalSpeed*.5;
-speed = totalSpeed*.5;
+other.speed = totalSpeed*0.5;
+speed = totalSpeed*0.5;
 
 rotationSpeed = irandom_range(1*speed/2, 2*speed);
 
