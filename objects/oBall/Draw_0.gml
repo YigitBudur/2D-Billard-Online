@@ -37,7 +37,7 @@ if (global.isYourTurn == true)
 					{													
 						var SHOT_ANGLE = point_direction(global.mouseXEnd,global.mouseYEnd, global.mouseXStart,global.mouseYStart);
 						var PULL_DIST = point_distance(global.mouseXEnd,global.mouseYEnd, global.mouseXStart,global.mouseYStart);
-						PULL_DIST = clamp(PULL_DIST,6,48);
+						PULL_DIST = clamp(PULL_DIST,6,88);
 						if (PULL_DIST >= 6)
 						{
 							draw_arrow(x-1,y-1,x+lengthdir_x(PULL_DIST,SHOT_ANGLE),y+lengthdir_y(PULL_DIST,SHOT_ANGLE),12);
@@ -55,11 +55,11 @@ if (global.isYourTurn == true)
 						var PULL_DIST = point_distance(global.mouseXEnd,global.mouseYEnd, global.mouseXStart,global.mouseYStart);
 						if (PULL_DIST >= 6)
 						{
-							var SHOT_SPEED = clamp(PULL_DIST,6,48);
+							var SHOT_SPEED = clamp(PULL_DIST,6,88);
 							if (SHOT_SPEED)
-							speed = SHOT_SPEED/8;
-			
-							//global.isYourTurn = false;
+							speed = SHOT_SPEED/7.8;
+
+							global.isYourTurn = false;
 						}
 					}
 				}

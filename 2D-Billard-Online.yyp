@@ -41,10 +41,12 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"_32x32_ALL_ASSETS","path":"sprites/_32x32_ALL_ASSETS/_32x32_ALL_ASSETS.yy",},},
     {"id":{"name":"sPoolTable","path":"sprites/sPoolTable/sPoolTable.yy",},},
+    {"id":{"name":"oWalls","path":"objects/oWalls/oWalls.yy",},},
     {"id":{"name":"sBallsOriginal","path":"sprites/sBallsOriginal/sBallsOriginal.yy",},},
-    {"id":{"name":"sBackground1","path":"sprites/sBackground1/sBackground1.yy",},},
+    {"id":{"name":"Room12","path":"rooms/Room12/Room12.yy",},},
     {"id":{"name":"oBallCatcher","path":"objects/oBallCatcher/oBallCatcher.yy",},},
     {"id":{"name":"sPoolTableSave","path":"sprites/sPoolTableSave/sPoolTableSave.yy",},},
+    {"id":{"name":"sWalls","path":"sprites/sWalls/sWalls.yy",},},
     {"id":{"name":"oBall","path":"objects/oBall/oBall.yy",},},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
     {"id":{"name":"sBallsSmall","path":"sprites/sBallsSmall/sBallsSmall.yy",},},
@@ -53,6 +55,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room12","path":"rooms/Room12/Room12.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
