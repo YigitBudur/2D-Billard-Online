@@ -1,7 +1,7 @@
 /// @description Insert description here
 
-
-friction = .0075;
+rotationSpeed = 0;
+friction = .02;
 ballType = noone; // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
 image_index = ballType;
 
@@ -10,5 +10,5 @@ LMBh = noone;
 LMBr = noone;
 RMBr = noone;
 
-
+placed = true;
 

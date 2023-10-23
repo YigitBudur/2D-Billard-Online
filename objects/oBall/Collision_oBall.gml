@@ -14,9 +14,9 @@ var totalSpeed = (other.speed+speed);
 other.speed = totalSpeed*.5;
 speed = totalSpeed*.5;
 
+rotationSpeed = irandom_range(1*speed/2, 2*speed);
 
-
-show_debug_message(speed);
-show_debug_message(other.speed);
+//show_debug_message(speed);
+//show_debug_message(other.speed);
 
 

@@ -1,5 +1,6 @@
 /// @description Insert description here
 draw_set_halign(fa_left);
+draw_set_font(fntDefault);
 draw_text(20,40,"FPS: "+string(floor(fps_real)));
 
 var guiWidth = display_get_gui_width();
@@ -25,9 +26,11 @@ if (gameState == 2)
 if (gameState == 3)
 {
 	draw_text(20,20,"ENDED");
-	draw_text(guiWidth/2,guiHeight,global.winner + " HAS WON");
+	draw_set_font(fntBig);
+	draw_text(guiWidth/2,guiHeight/2,global.winner + " HAS WON");
 }
 
+draw_set_font(fntDefault);
 draw_set_halign(fa_center);
 if (global.isYourTurn == true)
 {
