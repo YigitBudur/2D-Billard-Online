@@ -1,39 +1,5 @@
 /// @description Insert description here
 
-
-#region Unstuck Balls
-//with(instance_place(x,y,oBall))
-//{
-//	if (id != other.id)
-//	{			
-//		var pdist = point_distance(x,y,other.x,other.y);
-//		var dir1 = point_direction(x,y, other.x,other.y); 
-//		var dir2 = point_direction(other.x,other.y, x,y);
-//		x = x+lengthdir_x(pdist/12,dir2);
-//		y = y+lengthdir_y(pdist/12,dir2);
-//		other.x = other.x+lengthdir_x(pdist/12,dir1);
-//		other.y = other.y+lengthdir_y(pdist/12,dir1);
-				
-//		//show_debug_message("collision");		
-//		//show_debug_message("pdist="+string(pdist));		
-//		//draw_line(x,y,x+lengthdir_x(pdist/2,dir1),y+lengthdir_y(pdist/2,dir1));					
-//		//show_debug_message("current= "+string(x)+","+string(y));
-//		//show_debug_message("other= "+string(other.x)+","+string(other.y));		
-//	}
-//}
-#endregion
-	
-#region Unstuck Walls
-//with(instance_place(x,y,oWalls))
-//{	
-//	var pdist = point_distance(x,y,other.x,other.y);	
-//	var dir1 = point_direction(x,y, other.x,other.y); 
-	
-//	other.x = other.x+lengthdir_x(pdist/12,dir1);
-//	other.y = other.y+lengthdir_y(pdist/12,dir1);
-//}
-#endregion
-
 if (global.isYourTurn == true)
 {	
 	if (ballType == 0)
@@ -50,14 +16,22 @@ if (global.isYourTurn == true)
 		}
 		else 
 		{
-				if (phy_speed <= 0)
+				global.ballSpeedTotal = 0;
+				with(oBall)
 				{
-					draw_set_color(c_green);
+					if (bindFixture == true)
+					{
+						global.ballSpeedTotal += phy_speed;
+					}
+				}
+				
+				if (global.ballSpeedTotal <= 0)
+				{
+					draw_set_color(c_aqua);
 					draw_triangle(x-24,y-56, x,y-36, x+24,y-56, false);	
 					draw_set_color(c_white);
-					show_debug_message(">> STOPPED SPEED="+string(phy_speed));
-				} //else show_debug_message(">> SPEED="+string(speed));
-				if (LMBp && point_in_circle(mouse_x,mouse_y,x,y,24) && phy_speed <= 0) // [PRESS] to start setting a Shot Direction
+				}
+				if (LMBp && point_in_circle(mouse_x,mouse_y,x,y,24) && global.ballSpeedTotal <= 0) // [PRESS] to start setting a Shot Direction
 				{
 					global.mouseXStart = mouse_x;	
 					global.mouseYStart = mouse_y;
@@ -90,8 +64,8 @@ if (global.isYourTurn == true)
 						{
 							//lerp(48,700);
 							var clampDIST = clamp(PULL_DIST,32,400);
-							var SHOT_SPEED = lerp(50,3000,clampDIST/400);
-							show_debug_message(SHOT_SPEED);
+							var SHOT_SPEED = lerp(25,3000,clampDIST/400);
+							//show_debug_message(SHOT_SPEED);
 							
 							var lenX = lengthdir_x(SHOT_SPEED,SHOT_ANGLE);
 							var lenY = lengthdir_y(SHOT_SPEED,SHOT_ANGLE);

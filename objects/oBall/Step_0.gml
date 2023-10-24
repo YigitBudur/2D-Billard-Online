@@ -8,6 +8,16 @@ LMBr = mouse_check_button_released(mb_left);
 RMBr = mouse_check_button_released(mb_right);
 #endregion
 
+
+if (bindFixture == false)
+{
+	if (ballType == 0)
+	{
+		physics_fixture_bind(global.fixMOVE, self);	
+	} else physics_fixture_bind(global.fixMOVE, self);		
+	bindFixture = true;
+}
+
 if (placed == true)
 {
 	
@@ -17,7 +27,12 @@ if (placed == true)
 	phy_position_y = mouse_y;
 	if (LMBr)
 	{
-		placed = true;	
+		placed = true;		
+		//with(oBall)
+		//{
+		//	physics_remove_fixture(self, global.fixCANTMOVE);
+		//	physics_fixture_bind(global.fixMOVE, self);	
+		//}
 	}
 }
 

@@ -21,4 +21,23 @@ global.redBallsINSIDE = 0;
 global.yellowBallsINSIDE = 0;
 global.winner = "";
 
+global.ballSpeedTotal = 0;
 
+global.fixCANTMOVE = physics_fixture_create();
+physics_fixture_set_circle_shape(global.fixCANTMOVE, 24);
+physics_fixture_set_density(global.fixCANTMOVE, 0.0);
+physics_fixture_set_restitution(global.fixCANTMOVE, 1.0);
+physics_fixture_set_collision_group(global.fixCANTMOVE, 1);
+physics_fixture_set_linear_damping(global.fixCANTMOVE, 0.9);
+physics_fixture_set_angular_damping(global.fixCANTMOVE, 0.7);
+physics_fixture_set_friction(global.fixCANTMOVE, 5);
+
+
+global.fixMOVE = physics_fixture_create();
+physics_fixture_set_circle_shape(global.fixMOVE, 24);
+physics_fixture_set_density(global.fixMOVE, 1.0);
+physics_fixture_set_restitution(global.fixMOVE, 1.0);
+physics_fixture_set_collision_group(global.fixMOVE, 1);
+physics_fixture_set_linear_damping(global.fixMOVE, 0.9);
+physics_fixture_set_angular_damping(global.fixMOVE, 0.7);
+physics_fixture_set_friction(global.fixCANTMOVE, 5);

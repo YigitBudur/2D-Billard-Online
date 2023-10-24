@@ -23,7 +23,7 @@
   "physicsGroup": 1,
   "physicsKinematic": false,
   "physicsLinearDamping": 0.9,
-  "physicsObject": true,
+  "physicsObject": false,
   "physicsRestitution": 1.0,
   "physicsSensor": false,
   "physicsShape": 0,
