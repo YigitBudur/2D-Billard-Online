@@ -10,16 +10,19 @@ RMBr = mouse_check_button_released(mb_right);
 
 if (placed == true)
 {
-	if (speed > 0)
-	{
-		image_angle += speed*2;
-	}
+	
 
 } else {
-	x = mouse_x;
-	y = mouse_y;
+	phy_position_x = mouse_x;
+	phy_position_y = mouse_y;
 	if (LMBr)
 	{
 		placed = true;	
 	}
+}
+
+if (phy_speed < .2)
+{
+	phy_speed_x = 0;
+	phy_speed_y = 0;
 }
