@@ -20,13 +20,18 @@ if (connectedPlayers == 2)
 		gameState = GAME_STATE.PLAYING;		
 	}
 	
-	if (mouse_check_button_pressed(mb_middle))
+	if (gameState == GAME_STATE.ENDED)
 	{
-		with(instance_create_layer(mouse_x,mouse_y,"layerBalls",oBall))
-		{
-			ballType = choose(2,3); // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
-		}
+		alarm_set(0,60*10);
 	}
+	
+	//if (mouse_check_button_pressed(mb_middle))
+	//{
+	//	with(instance_create_layer(mouse_x,mouse_y,"layerBalls",oBall))
+	//	{
+	//		ballType = choose(2,3); // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
+	//	}
+	//}
 }
 
 

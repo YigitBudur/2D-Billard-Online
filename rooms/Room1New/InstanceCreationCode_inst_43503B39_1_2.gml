@@ -1,1 +1,0 @@
-ballType = 3; // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
