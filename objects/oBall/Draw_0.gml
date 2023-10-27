@@ -67,13 +67,25 @@ if (global.isYourTurn == true)
 							var SHOT_SPEED = lerp(25,3000,clampDIST/400);
 							//show_debug_message(SHOT_SPEED);
 							
+							var buffer = buffer_create(1024, buffer_fixed,1)
+							buffer_seek(buffer, buffer_seek_start,0);
+							
+							
 							var lenX = lengthdir_x(SHOT_SPEED,SHOT_ANGLE);
 							var lenY = lengthdir_y(SHOT_SPEED,SHOT_ANGLE);
+							show_debug_message(lenX);
+							show_debug_message(lenY);
+							buffer_write(buffer, buffer_u8, 1);
+							buffer_write(buffer, buffer_f32, lenX);
+							buffer_write(buffer, buffer_f32, lenY);
+							network_send_packet(oGame.socket,buffer, buffer_get_size(buffer));
+							buffer_delete(buffer);
 							
 							physics_apply_force(x,y, lenX, lenY);
+							
 							//speed = SHOT_SPEED/7.6;
 
-							//global.isYourTurn = false;
+							global.isYourTurn = false;
 						}
 						global.mouseXStart = noone;
 						global.mouseYStart = noone;

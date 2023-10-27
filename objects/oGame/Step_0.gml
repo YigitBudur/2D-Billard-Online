@@ -30,20 +30,20 @@ if (connectedPlayers == 2)
 }
 
 
-if window_get_fullscreen()
-{
-	// Fullscreen is ON
-	var displayWidth = display_get_width();
-	var displayHeight = display_get_height();
+//if window_get_fullscreen()
+//{
+//	// Fullscreen is ON
+//	var displayWidth = display_get_width();
+//	var displayHeight = display_get_height();
 	
-	window_set_size(displayWidth,displayHeight);
-}
-else
-{
+//	window_set_size(displayWidth,displayHeight);
+//}
+//else
+//{
 
-    // Fullscreen is OFF
-	var displayWidth = display_get_width();
-	var displayHeight = display_get_height();
+//    // Fullscreen is OFF
+//	var displayWidth = display_get_width();
+//	var displayHeight = display_get_height();
 	
-	window_set_size(displayWidth*(3/4),displayHeight*(3/4));
-}
+//	window_set_size(displayWidth*(3/4),displayHeight*(3/4));
+//}
