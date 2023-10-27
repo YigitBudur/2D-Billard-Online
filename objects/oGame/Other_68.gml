@@ -11,10 +11,9 @@ switch(type_of_event){
 	
 	    buffer = ds_map_find_value(async_load, "buffer");
 	    buffer_seek(buffer, buffer_seek_start, 0);
-		if(buffer_read(buffer, buffer_u8) == 1){
-			buffer_seek(buffer, buffer_seek_start, 0)
-			received_packet(buffer);
-		}
+		buffer_seek(buffer, buffer_seek_start, 0)
+		received_packet(buffer);
+		
 	    
 		break;
 		
