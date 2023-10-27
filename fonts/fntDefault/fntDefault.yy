@@ -205,7 +205,7 @@
     {"amount":-1,"first":121,"second":46,},
   ],
   "last": 0,
-  "lineHeight": 0,
+  "lineHeight": 25,
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",
@@ -226,5 +226,5 @@
     "path": "texturegroups/Default",
   },
   "TTFName": "",
-  "usesSDF": false,
+  "usesSDF": true,
 }
