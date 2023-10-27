@@ -32,7 +32,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.4.0.84",
   },
   "resources": [
     {"id":{"name":"sBallCue","path":"sprites/sBallCue/sBallCue.yy",},},
@@ -40,6 +40,7 @@
     {"id":{"name":"sPoolTableSave12","path":"sprites/sPoolTableSave12/sPoolTableSave12.yy",},},
     {"id":{"name":"sBlueDot","path":"sprites/sBlueDot/sBlueDot.yy",},},
     {"id":{"name":"sPattern1","path":"sprites/sPattern1/sPattern1.yy",},},
+    {"id":{"name":"received_packet","path":"scripts/received_packet/received_packet.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room1NewSave","path":"rooms/Room1NewSave/Room1NewSave.yy",},},
     {"id":{"name":"sPoolTable","path":"sprites/sPoolTable/sPoolTable.yy",},},

@@ -1,5 +1,8 @@
 /// @description Insert description here
 
+socket = network_create_socket(network_socket_tcp);
+network_connect(socket,"192.168.50.235", 65);
+
 connectedPlayers = 2;
 enum GAME_STATE // Used to determine if a round is being played, ended etc.
 {
@@ -41,3 +44,9 @@ physics_fixture_set_collision_group(global.fixMOVE, 1);
 physics_fixture_set_linear_damping(global.fixMOVE, 0.9);
 physics_fixture_set_angular_damping(global.fixMOVE, 0.7);
 physics_fixture_set_friction(global.fixCANTMOVE, 5);
+
+
+with (oBall) {
+    show_debug_message("Objenin X pozisyonu: " + string(x));
+    show_debug_message("Objenin Y pozisyonu: " + string(y));
+}
