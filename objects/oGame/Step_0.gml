@@ -11,18 +11,29 @@ if (connectedPlayers == 2)
     if (gameState == GAME_STATE.SETTING_TABLE)
 	{
 		var whiteBallX = room_width/3;
-		var whiteBallY = room_height/2;					
+		var whiteBallY = room_height/2;
 		with(instance_create_layer(whiteBallX,whiteBallY,"layerBalls",oBall))
 		{
 			ballType = 0; // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
 		}
+		
+		//with(oBall)
+		//{
+		//	if (ballType > 1)
+		//	{
+				
+		//	}
+		//}
 							
 		gameState = GAME_STATE.PLAYING;		
 	}
 	
 	if (gameState == GAME_STATE.ENDED)
 	{
-		alarm_set(0,60*10);
+		if (alarm_get(0) <= 0)
+		{
+			alarm_set(0,60*10);
+		}
 	}
 	
 	//if (mouse_check_button_pressed(mb_middle))

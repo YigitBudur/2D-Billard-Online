@@ -81,9 +81,15 @@ if (global.isYourTurn == true)
 							network_send_packet(oGame.socket,buffer, buffer_get_size(buffer));
 							buffer_delete(buffer);
 							
+							audio_play_sound(sndIstaka,1,false);
+							audio_play_sound(sndBallCrash,1,false,.7);
+							var PART_ANGLE = point_direction(global.mouseXStart,global.mouseYStart, global.mouseXEnd,global.mouseYEnd);
+							for(var i=0; i<45; i++)
+							{
+								part_type_direction(global.partHit, -(PART_ANGLE+irandom_range(0,-16)), -(PART_ANGLE+irandom_range(0,16)), 0, 0);
+								part_particles_create(global.sysParticles,x,y,global.partHit,1);
+							}
 							physics_apply_force(x,y, lenX, lenY);
-							
-							//speed = SHOT_SPEED/7.6;
 
 							global.isYourTurn = false;
 						}

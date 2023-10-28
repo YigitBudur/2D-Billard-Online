@@ -20,7 +20,7 @@ global.mouseYStart = noone; // Starting point of the Ball Shooting
 global.mouseXEnd = noone;	// Ending point of the Ball Shooting	
 global.mouseYEnd = noone;	// Ending point of the Ball Shooting	
 
-global.redBallsINSIDE = 0;
+global.redBallsINSIDE = 7;
 global.yellowBallsINSIDE = 0;
 global.winner = "";
 
@@ -45,3 +45,17 @@ physics_fixture_set_linear_damping(global.fixMOVE, 0.9);
 physics_fixture_set_angular_damping(global.fixMOVE, 0.7);
 physics_fixture_set_friction(global.fixCANTMOVE, 5);
 
+#region Particles
+global.sysParticles = part_system_create_layer("layerParticles", false);
+
+global.partHit = part_type_create();
+part_type_alpha2(global.partHit, 1, 0);
+part_type_sprite(global.partHit, s2x2White, false, false, false);
+part_type_life(global.partHit, 35, 55);
+part_type_size(global.partHit, .75, 1.25, -.00075, 0);
+part_type_gravity(global.partHit, 0, 0);
+part_type_orientation(global.partHit, 0, 0, 0, 0, 0);
+part_type_direction(global.partHit, 0, 360, 0, 0);
+part_type_speed(global.partHit, 6, 25, -.5, false);
+part_type_blend(global.partHit, false);
+#endregion

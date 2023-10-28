@@ -4,28 +4,11 @@ with(instance_place(x,y,oBall)) // with the collided oBall:
 {	
 	if (ballType == 0 && placed == true) // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
 	{
-		if (global.isYourTurn == true)
+		if (global.isYourTurn == false)
 		{
 			//global.isYourTurn = false;
 			instance_destroy();
-			
-			//with(oBall)
-			//{
-			//	physics_remove_fixture(id, global.fixMOVE);
-			//	physics_fixture_bind(global.fixCANTMOVE, id);	
-			//}			
-			with(instance_create_layer(mouse_x,mouse_y,"layerBalls",oBall))
-			{				
-				ballType = 0; // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
-				placed = false;
-			}
-			
-		} else {
-			//with(instance_create_layer(mouse_x,mouse_y,"layerBalls",oBall))
-			//{
-			//	ballType = 0; // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
-			//	placed = false;
-			//}
+			instance_create_layer(mouse_x,mouse_y,"layerWalls",oWhiteBallPlacer);									
 		}
 		
 		

@@ -12,5 +12,5 @@ RMBr = noone;
 
 placed = true;
 //physics_fixture_bind(global.fixMOVE, self);	
-
+playedSound = false;
 
