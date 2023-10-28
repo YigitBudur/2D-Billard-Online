@@ -48,11 +48,14 @@
     {"id":{"name":"sPoolTable","path":"sprites/sPoolTable/sPoolTable.yy",},},
     {"id":{"name":"oWalls","path":"objects/oWalls/oWalls.yy",},},
     {"id":{"name":"sWALLPIECE","path":"sprites/sWALLPIECE/sWALLPIECE.yy",},},
+    {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},},
     {"id":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
+    {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
     {"id":{"name":"sBallsOriginal","path":"sprites/sBallsOriginal/sBallsOriginal.yy",},},
     {"id":{"name":"sRestartVote","path":"sprites/sRestartVote/sRestartVote.yy",},},
     {"id":{"name":"sWALLCIRCLE","path":"sprites/sWALLCIRCLE/sWALLCIRCLE.yy",},},
     {"id":{"name":"oBallCatcher","path":"objects/oBallCatcher/oBallCatcher.yy",},},
+    {"id":{"name":"rmMenu","path":"rooms/rmMenu/rmMenu.yy",},},
     {"id":{"name":"sPoolTableSave","path":"sprites/sPoolTableSave/sPoolTableSave.yy",},},
     {"id":{"name":"oRestartVote","path":"objects/oRestartVote/oRestartVote.yy",},},
     {"id":{"name":"fntBig","path":"fonts/fntBig/fntBig.yy",},},
@@ -70,6 +73,7 @@
     {"id":{"name":"SMS_GUI_Display_NO_BG","path":"sprites/SMS_GUI_Display_NO_BG/SMS_GUI_Display_NO_BG.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rmMenu","path":"rooms/rmMenu/rmMenu.yy",},},
     {"roomId":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
   ],
   "TextureGroups": [

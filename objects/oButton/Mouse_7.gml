@@ -1,5 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-window_set_fullscreen(0);
+image_index = 1;
 
-random_set_seed(12);
+if (buttonName == "New Game")
+{	
+	room_goto(rmGame);	
+}
+
+
+
+
+
+
+

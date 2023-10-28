@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sRestartVote",
+  "name": "sButton",
   "bbox_bottom": 73,
   "bbox_left": 0,
   "bbox_right": 495,
@@ -33,7 +33,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sRestartVote",
+    "name": "sButton",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7c4dc887-1efb-4352-b40e-8507d882d6f7","path":"sprites/sRestartVote/sRestartVote.yy",},},},"Disabled":false,"id":"a064e86c-62b1-42ef-858f-497617f2c978","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5b06e962-c8b6-49e4-b543-e7ff2d45f1ff","path":"sprites/sRestartVote/sRestartVote.yy",},},},"Disabled":false,"id":"632742a7-c67c-48ef-b8fe-dedf1fc8432e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7c4dc887-1efb-4352-b40e-8507d882d6f7","path":"sprites/sButton/sButton.yy",},},},"Disabled":false,"id":"4654918c-84b1-4d40-a0c4-8d83ef9f7725","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5b06e962-c8b6-49e4-b543-e7ff2d45f1ff","path":"sprites/sButton/sButton.yy",},},},"Disabled":false,"id":"e685f680-cd04-42fa-8f8e-44612f5eae84","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -1,0 +1,2 @@
+
+buttonName = "New Game";

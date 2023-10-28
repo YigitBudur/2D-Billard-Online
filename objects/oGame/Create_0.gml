@@ -59,3 +59,10 @@ part_type_direction(global.partHit, 0, 360, 0, 0);
 part_type_speed(global.partHit, 6, 25, -.5, false);
 part_type_blend(global.partHit, false);
 #endregion
+
+//arrBallTypes = array_create(14);
+arrBallTypes = [ 3,3,3,3,3,3,3 , 2,2,2,2,2,2,2 ];
+arrBallTypes = array_shuffle(arrBallTypes);
+
+ballsX = [1212, 1257,1257, 1305,1305, 1351,1351,1351,1351, 1400,1400,1400,1400,1400];
+ballsY = [542, 513,565, 486,592, 459,515,568,618, 435,486,542,594,647];

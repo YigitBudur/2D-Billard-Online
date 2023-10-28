@@ -1,7 +1,7 @@
 /// @description Insert description here
 
 
-if (connectedPlayers == 2)
+if (connectedPlayers == 2 && room == rmGame)
 {
 	if (gameState == GAME_STATE.WAITING_TO_START)
 	{
@@ -15,19 +15,20 @@ if (connectedPlayers == 2)
 	{
 		var whiteBallX = room_width/3;
 		var whiteBallY = room_height/2;
+		
+		for (var i=0; i<14; i++)
+		{
+			with(instance_create_layer(ballsX[i],ballsY[i],"layerBalls",oBall))
+			{
+				ballType = other.arrBallTypes[i]; //3; // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]		
+			}			
+			show_debug_message(other.arrBallTypes[i]);
+		}
+		
 		with(instance_create_layer(whiteBallX,whiteBallY,"layerBalls",oBall))
 		{
 			ballType = 0; // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
-		}
-		
-		//with(oBall)
-		//{
-		//	if (ballType > 1)
-		//	{
-				
-		//	}
-		//}
-							
+		}									
 		gameState = GAME_STATE.PLAYING;		
 	}
 	

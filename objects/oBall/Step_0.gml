@@ -1,5 +1,6 @@
 /// @description Insert description here
 image_index = ballType;
+show_debug_message(image_index);
 #region Key Checks [CTRL+M to close]
 LMBp = mouse_check_button_pressed(mb_left);
 LMBh = mouse_check_button(mb_left);
