@@ -1,7 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-game_restart();
+with(oBall)
+{
+	instance_destroy();
+}
+
+gameState = GAME_STATE.WAITING_TO_START;
+
 
 
 
