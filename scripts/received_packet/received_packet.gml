@@ -3,7 +3,7 @@
 function received_packet(buffer){
 	
 	msgid = buffer_read(buffer, buffer_u8);	
-	
+	show_message(msgid);
 	switch(msgid){
 		case 1:
 			
@@ -27,7 +27,25 @@ function received_packet(buffer){
 			if(turn == 1){
 				global.isYourTurn = true;
 			}
+		case 4:
+			show_message("odaya giriliyor");
+			var isRoomEmpty = buffer_read(buffer, buffer_bool);
+			if(isRoomEmpty){
+				show_message("oda boştu giriyoruz");
+				room_goto(rmGame);
+			}else{
+				show_message("oda dolu yallah");
+			}
+			break;
+			
+			
+		case 10:
+			show_message("Opponent left. You win");
 		
+		default:
+			show_debug_message("default");
+			break;
 	}
-	
+		
 }
+	
