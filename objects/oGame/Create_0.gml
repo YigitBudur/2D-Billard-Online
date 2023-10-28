@@ -1,7 +1,7 @@
 /// @description Insert description here
 
 socket = network_create_socket(network_socket_tcp);
-network_connect(socket,"139.59.207.188", 6561);
+network_connect(socket,"192.168.50.235", 6562);
 
 connectedPlayers = 2;
 enum GAME_STATE // Used to determine if a round is being played, ended etc.
