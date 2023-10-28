@@ -1,2 +1,2 @@
 
-buttonName = "New Game";
+buttonName = "100";

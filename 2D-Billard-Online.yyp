@@ -57,6 +57,7 @@
     {"id":{"name":"oBallCatcher","path":"objects/oBallCatcher/oBallCatcher.yy",},},
     {"id":{"name":"rmMenu","path":"rooms/rmMenu/rmMenu.yy",},},
     {"id":{"name":"sPoolTableSave","path":"sprites/sPoolTableSave/sPoolTableSave.yy",},},
+    {"id":{"name":"oSocket","path":"objects/oSocket/oSocket.yy",},},
     {"id":{"name":"oRestartVote","path":"objects/oRestartVote/oRestartVote.yy",},},
     {"id":{"name":"fntBig","path":"fonts/fntBig/fntBig.yy",},},
     {"id":{"name":"sWalls","path":"sprites/sWalls/sWalls.yy",},},
