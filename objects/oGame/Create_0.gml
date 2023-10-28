@@ -20,7 +20,7 @@ global.mouseYStart = noone; // Starting point of the Ball Shooting
 global.mouseXEnd = noone;	// Ending point of the Ball Shooting	
 global.mouseYEnd = noone;	// Ending point of the Ball Shooting	
 
-global.redBallsINSIDE = 7;
+global.redBallsINSIDE = 0;
 global.yellowBallsINSIDE = 0;
 global.winner = "";
 
