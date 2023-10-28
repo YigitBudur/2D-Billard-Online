@@ -8,6 +8,7 @@ if (LMBr) // Place the White Ball back
 {
 	if (!place_meeting(mouse_x,mouse_y,oBall))
 	{		
+		// Send this ball's data to other player
 		with(instance_create_layer(mouse_x,mouse_y,"layerBalls",oBall))
 		{				
 			ballType = 0; // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]

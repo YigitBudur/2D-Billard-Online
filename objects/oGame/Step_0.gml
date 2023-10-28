@@ -5,7 +5,10 @@ if (connectedPlayers == 2)
 {
 	if (gameState == GAME_STATE.WAITING_TO_START)
 	{
-		gameState = GAME_STATE.SETTING_TABLE;	
+		global.redBallsINSIDE = 0;
+		global.yellowBallsINSIDE = 0;
+		global.winner = "";
+		gameState = GAME_STATE.SETTING_TABLE;
 	}
 	
     if (gameState == GAME_STATE.SETTING_TABLE)
