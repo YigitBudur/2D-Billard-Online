@@ -48,3 +48,4 @@ if (alarm_get(0) > 0)
 {
 	draw_text(guiWidth/2,250,"GAME RESTARTS IN: "+string(alarm_get(0)));	
 }
+

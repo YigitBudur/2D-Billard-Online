@@ -24,13 +24,7 @@ if (global.isYourTurn == true)
 						global.ballSpeedTotal += phy_speed;
 					}
 				}
-				
-				if (global.ballSpeedTotal <= 0)
-				{
-					draw_set_color(c_aqua);
-					draw_triangle(x-24,y-56, x,y-36, x+24,y-56, false);	
-					draw_set_color(c_white);
-				}
+								
 				if (LMBp && point_in_circle(mouse_x,mouse_y,x,y,24) && global.ballSpeedTotal <= 0) // [PRESS] to start setting a Shot Direction
 				{
 					global.mouseXStart = mouse_x;	
@@ -44,8 +38,8 @@ if (global.isYourTurn == true)
 					{													
 						var SHOT_ANGLE = point_direction(global.mouseXEnd,global.mouseYEnd, global.mouseXStart,global.mouseYStart);
 						var PULL_DIST = point_distance(global.mouseXEnd,global.mouseYEnd, global.mouseXStart,global.mouseYStart);
-						PULL_DIST = clamp(PULL_DIST,32,400);
-						if (PULL_DIST >= 32)
+						PULL_DIST = clamp(PULL_DIST,24,400);
+						if (PULL_DIST >= 24)
 						{
 							draw_arrow(x-1,y-1,x+lengthdir_x(PULL_DIST,SHOT_ANGLE),y+lengthdir_y(PULL_DIST,SHOT_ANGLE),24);
 							draw_sprite_ext(sBallCue,0,x-lengthdir_x(PULL_DIST/5,SHOT_ANGLE),y-lengthdir_y(PULL_DIST/5,SHOT_ANGLE),1,1,SHOT_ANGLE,c_white,1);
@@ -60,11 +54,11 @@ if (global.isYourTurn == true)
 						direction = SHOT_ANGLE;
 						
 						var PULL_DIST = point_distance(global.mouseXEnd,global.mouseYEnd, global.mouseXStart,global.mouseYStart);
-						if (PULL_DIST >= 32)
+						if (PULL_DIST >= 24)
 						{
 							//lerp(48,700);
 							var clampDIST = clamp(PULL_DIST,32,400);
-							var SHOT_SPEED = lerp(25,3000,clampDIST/400);
+							var SHOT_SPEED = lerp(24,2800,clampDIST/400);
 							//show_debug_message(SHOT_SPEED);
 							
 							var buffer = buffer_create(1024, buffer_fixed,1)
@@ -102,4 +96,17 @@ if (global.isYourTurn == true)
 
 }
 
+// Draw the "Your Turn" arrow above the balls
+if (ballType == 0 && global.ballSpeedTotal <= 0 && global.isYourTurn == true)
+{
+	draw_set_color(c_aqua);
+	draw_triangle(x-24,y-56, x,y-36, x+24,y-56, false);	
+	draw_set_color(c_white);
+}
 draw_self();
+if (ballType == 0 && global.ballSpeedTotal <= 0 && global.isYourTurn == true)
+{
+	draw_set_color(c_aqua);
+	draw_triangle(x-24,y-56, x,y-36, x+24,y-56, false);	
+	draw_set_color(c_white);
+}
