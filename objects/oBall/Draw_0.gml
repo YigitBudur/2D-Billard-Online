@@ -61,20 +61,11 @@ if (global.isYourTurn == true)
 							var SHOT_SPEED = lerp(24,2800,clampDIST/400);
 							//show_debug_message(SHOT_SPEED);
 							
-							var buffer = buffer_create(1024, buffer_fixed,1)
-							buffer_seek(buffer, buffer_seek_start,0);
-							
 							
 							var lenX = lengthdir_x(SHOT_SPEED,SHOT_ANGLE);
 							var lenY = lengthdir_y(SHOT_SPEED,SHOT_ANGLE);
-							show_debug_message(lenX);
-							show_debug_message(lenY);
-							buffer_write(buffer, buffer_u8, 1);
-							buffer_write(buffer, buffer_f32, lenX);
-							buffer_write(buffer, buffer_f32, lenY);
-							network_send_packet(oGame.socket,buffer, buffer_get_size(buffer));
-							buffer_delete(buffer);
-							
+							send_force_packet(lenX, lenY);
+
 							audio_play_sound(sndIstaka,1,false);
 							audio_play_sound(sndBallCrash,1,false,.7);
 							var PART_ANGLE = point_direction(global.mouseXStart,global.mouseYStart, global.mouseXEnd,global.mouseYEnd);
