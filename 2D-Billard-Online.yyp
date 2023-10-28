@@ -39,6 +39,7 @@
     {"id":{"name":"sndIstaka","path":"sounds/sndIstaka/sndIstaka.yy",},},
     {"id":{"name":"sBallCue","path":"sprites/sBallCue/sBallCue.yy",},},
     {"id":{"name":"sBallsSmall","path":"sprites/sBallsSmall/sBallsSmall.yy",},},
+    {"id":{"name":"send_force_packet","path":"scripts/send_force_packet/send_force_packet.yy",},},
     {"id":{"name":"sPoolTableSave12","path":"sprites/sPoolTableSave12/sPoolTableSave12.yy",},},
     {"id":{"name":"sBlueDot","path":"sprites/sBlueDot/sBlueDot.yy",},},
     {"id":{"name":"sLMB","path":"sprites/sLMB/sLMB.yy",},},

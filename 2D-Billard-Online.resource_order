@@ -21,6 +21,7 @@
     {"name":"sndIstaka","order":1,"path":"sounds/sndIstaka/sndIstaka.yy",},
     {"name":"sBallCue","order":7,"path":"sprites/sBallCue/sBallCue.yy",},
     {"name":"sBallsSmall","order":3,"path":"sprites/sBallsSmall/sBallsSmall.yy",},
+    {"name":"send_force_packet","order":1,"path":"scripts/send_force_packet/send_force_packet.yy",},
     {"name":"sPoolTableSave12","order":9,"path":"sprites/sPoolTableSave12/sPoolTableSave12.yy",},
     {"name":"sBlueDot","order":5,"path":"sprites/sBlueDot/sBlueDot.yy",},
     {"name":"sLMB","order":5,"path":"sprites/sLMB/sLMB.yy",},
