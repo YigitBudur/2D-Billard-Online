@@ -16,19 +16,27 @@ if (connectedPlayers == 2 && room == rmGame)
 		var whiteBallX = room_width/3;
 		var whiteBallY = room_height/2;
 		
+		// Colored Balls
 		for (var i=0; i<14; i++)
 		{
 			with(instance_create_layer(ballsX[i],ballsY[i],"layerBalls",oBall))
 			{
 				ballType = other.arrBallTypes[i]; //3; // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]		
 			}			
-			show_debug_message(other.arrBallTypes[i]);
+			//show_debug_message(other.arrBallTypes[i]);
 		}
 		
+		// White Ball
 		with(instance_create_layer(whiteBallX,whiteBallY,"layerBalls",oBall))
 		{
 			ballType = 0; // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
-		}									
+		}
+		
+		// Black Ball
+		with(instance_create_layer(1305,539,"layerBalls",oBall))
+		{
+			ballType = 1; // [0 = White Ball] [1 = Black Ball] [2 = Red Ball] [3 = Yellow Ball]
+		}
 		gameState = GAME_STATE.PLAYING;		
 	}
 	

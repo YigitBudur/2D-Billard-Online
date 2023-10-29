@@ -1,7 +1,7 @@
 /// @description Insert description here
 
 
-connectedPlayers = 2;
+connectedPlayers = 0;
 enum GAME_STATE // Used to determine if a round is being played, ended etc.
 {
 	WAITING_TO_START,
