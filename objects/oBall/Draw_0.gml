@@ -76,7 +76,7 @@ if (global.isYourTurn == true)
 							}
 							physics_apply_force(x,y, lenX, lenY);
 
-							global.isYourTurn = false;
+							//global.isYourTurn = false;
 						}
 						global.mouseXStart = noone;
 						global.mouseYStart = noone;

@@ -11,7 +11,7 @@ enum GAME_STATE // Used to determine if a round is being played, ended etc.
 }
 
 gameState = GAME_STATE.WAITING_TO_START; // <-- Default Starting State
-global.isYourTurn = false; // used to play your turn in [oBall -> Draw Event]
+global.isYourTurn = true; // used to play your turn in [oBall -> Draw Event]
 
 global.mouseXStart = noone; // Starting point of the Ball Shooting
 global.mouseYStart = noone; // Starting point of the Ball Shooting

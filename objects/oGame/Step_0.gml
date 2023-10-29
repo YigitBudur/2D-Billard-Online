@@ -1,7 +1,7 @@
 /// @description Insert description here
 
 
-if (connectedPlayers == 2 && room == rmGame)
+if (connectedPlayers == 1 && room == rmGame)
 {
 	if (gameState == GAME_STATE.WAITING_TO_START)
 	{

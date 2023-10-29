@@ -3,12 +3,12 @@
 function received_packet(buffer){
 	
 	msgid = buffer_read(buffer, buffer_u8);	
-	show_message(msgid);
+	
 	switch(msgid){
 		case 1:
 			
 			var turn = buffer_read(buffer, buffer_u8);	
-			show_debug_message("turn" + string(turn));
+			
 			var xx = buffer_read(buffer, buffer_f32);
 			var yy = buffer_read(buffer, buffer_f32);
 			with(oBall)
@@ -28,13 +28,13 @@ function received_packet(buffer){
 				global.isYourTurn = true;
 			}
 		case 4:
-			show_message("odaya giriliyor");
+			//show_message("odaya giriliyor");
 			var isRoomEmpty = buffer_read(buffer, buffer_bool);
 			if(isRoomEmpty){
-				show_message("oda boştu giriyoruz");
+				//show_message("oda boştu giriyoruz");
 				room_goto(rmGame);
 			}else{
-				show_message("oda dolu yallah");
+				//show_message("oda dolu yallah");
 			}
 			break;
 			
