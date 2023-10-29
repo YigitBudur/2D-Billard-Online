@@ -205,7 +205,11 @@
     {"amount":-1,"first":121,"second":46,},
   ],
   "last": 0,
+<<<<<<< Updated upstream
   "lineHeight": 25,
+=======
+  "lineHeight": 0,
+>>>>>>> Stashed changes
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",
@@ -226,5 +230,9 @@
     "path": "texturegroups/Default",
   },
   "TTFName": "",
+<<<<<<< Updated upstream
   "usesSDF": true,
+=======
+  "usesSDF": false,
+>>>>>>> Stashed changes
 }

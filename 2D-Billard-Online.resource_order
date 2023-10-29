@@ -39,7 +39,6 @@
     {"name":"sPoolTableSave","order":1,"path":"sprites/sPoolTableSave/sPoolTableSave.yy",},
     {"name":"oSocket","order":8,"path":"objects/oSocket/oSocket.yy",},
     {"name":"oRestartVote","order":6,"path":"objects/oRestartVote/oRestartVote.yy",},
-    {"name":"fntBig","order":1,"path":"fonts/fntBig/fntBig.yy",},
     {"name":"sWalls","order":6,"path":"sprites/sWalls/sWalls.yy",},
     {"name":"sPoolTableSaveNew","order":8,"path":"sprites/sPoolTableSaveNew/sPoolTableSaveNew.yy",},
     {"name":"oGame","order":1,"path":"objects/oGame/oGame.yy",},
